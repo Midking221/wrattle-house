@@ -79,7 +79,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:description", content: "Wattle House is a warm garden restaurant in Rungiri, Kikuyu. Dine-in, kerbside pickup & delivery. Open daily." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@WattleHouse" },
       { name: "twitter:title", content: "Wattle House — Garden Restaurant in Rungiri" },
       { name: "twitter:description", content: "Wattle House is a warm garden restaurant in Rungiri, Kikuyu. Dine-in, kerbside pickup & delivery. Open daily." },
       { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/b894c2dc-feed-4692-844b-e03d06c1f2f8" },
