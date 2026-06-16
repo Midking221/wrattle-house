@@ -1,0 +1,76 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fira+Sans:wght@300;400;500;600;700&display=swap");
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --font-serif: "DM Serif Display", ui-serif, Georgia, serif;
+  --font-sans: "Fira Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Warm Sand palette */
+:root {
+  --radius: 0.5rem;
+  --background: oklch(0.985 0.012 85);          /* #faf8f5 */
+  --foreground: oklch(0.28 0.025 60);
+  --card: oklch(0.97 0.018 85);                  /* #f0ebe3 */
+  --card-foreground: oklch(0.28 0.025 60);
+  --popover: oklch(0.985 0.012 85);
+  --popover-foreground: oklch(0.28 0.025 60);
+  --primary: oklch(0.46 0.045 60);               /* #8b7355 */
+  --primary-foreground: oklch(0.985 0.012 85);
+  --secondary: oklch(0.78 0.04 80);              /* #c9b99a */
+  --secondary-foreground: oklch(0.28 0.025 60);
+  --muted: oklch(0.94 0.015 85);
+  --muted-foreground: oklch(0.5 0.025 65);
+  --accent: oklch(0.78 0.04 80);
+  --accent-foreground: oklch(0.28 0.025 60);
+  --destructive: oklch(0.55 0.18 30);
+  --destructive-foreground: oklch(0.985 0.012 85);
+  --border: oklch(0.88 0.02 80);
+  --input: oklch(0.88 0.02 80);
+  --ring: oklch(0.46 0.045 60);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html, body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-weight: 300;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+}
